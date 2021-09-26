@@ -1,0 +1,21 @@
+digraph {
+	node [fontname="MS Gothic"]
+	subgraph cluster0 {
+		"手順1"
+		"手順2"
+		"手順1" -> "手順2"
+		label="Procedure-A"
+	}
+	subgraph cluster1 {
+		"手順3"
+		"手順4"
+		"手順3" -> "手順4"
+		label="Procedure-B"
+	}
+	"開始"
+	"終了"
+	"開始" -> "手順1"
+	"開始" -> "手順3"
+	"手順2" -> "終了"
+	"手順4" -> "終了"
+}

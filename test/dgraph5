@@ -1,0 +1,167 @@
+digraph {
+	overlap=true rankdir=LR splines=true
+	subgraph cluster0 {
+		{
+			graph [rank=source]
+			source0 [style=dotted]
+			1 [label="1気象観測
+・水位観測
+" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+			3 [label="3情報共有
+" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+			4 [label="4情報発信
+" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		}
+		2 [label="2警報・注
+意報発令" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		5 [label="5河川水位
+情報LV3
+発令" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		6 [label="6河川パト
+ロール" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		7 [label="7警察消防
+自衛隊警戒
+体制" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		8 [label="8公共交通
+機関等運休
+" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		9 [label="9保育所等
+の帰宅要請
+" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		10 [label="10市民警
+戒体制" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		11 [label="11避難場
+設置運営" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		12 [label="12避難行
+動" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		{
+			graph [rank=sink]
+			sink0 [style=dotted]
+			21 [label="21避難所
+巡回" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		}
+	}
+	subgraph cluster1 {
+		{
+			graph [rank=source]
+			source1 [style=dotted]
+			13 [label="13気象・
+水位観測" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		}
+		14 [label="14排水ポ
+ンプ場稼働
+" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		15 [label="15河川水
+位警戒LV
+4発令" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		16 [label="16災害状
+況モニタリ
+ング" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		17 [label="17救助" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		18 [label="18ポンプ
+車・ドクタ
+ーカーの配
+備等" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		19 [label="19停電・
+通行止め応
+急措置" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		20 [label="20情報発
+信" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		22 [label="22避難所
+増設・運営
+" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		23 [label="23避難行
+動" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		{
+			graph [rank=sink]
+			sink1 [style=dotted]
+			24 [label="24避難所
+巡回" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		}
+	}
+	subgraph cluster2 {
+		25 [label="25気象・
+水位観測" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		26 [label="26安全性
+確認" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		{
+			graph [rank=source]
+			source2 [style=dotted]
+			27 [label="27直接災
+害収束の確
+認" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		}
+		28 [label="28被害状
+況調査" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		29 [label="29避難所
+運営" color=blue fillcolor="#ccddff" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		33 [label="33避難所
+の統廃合" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		35 [label="35避難所
+巡回（健康
+チェック）
+" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		{
+			graph [rank=sink]
+			sink2 [style=dotted]
+			30 [label="30国・県
+との情報共
+有" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+			31 [label="31災害ゴ
+ミ対応" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+			32 [label="32インフ
+ラ復旧" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+			34 [label="34学校等
+開始準備" color=blue fillcolor="#ccddff" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		}
+	}
+	source0 -> sink0 [style=dotted weight=1000]
+	source1 -> sink1 [style=dotted weight=1000]
+	sink0 -> source1 [style=dotted weight=1000]
+	source2 -> sink2 [style=dotted weight=1000]
+	sink1 -> source2 [style=dotted weight=1000]
+	1 -> 2 [headlabel=i margin=1]
+	1 -> 5 [headlabel=i margin=1]
+	2 -> 5 [headlabel=c margin=1]
+	5 -> 6 [headlabel=i margin=1]
+	3 -> 7 [headlabel=i margin=1]
+	3 -> 8 [headlabel=i margin=1]
+	3 -> 9 [headlabel=i margin=1]
+	4 -> 10 [headlabel=i margin=1]
+	8 -> 10 [headlabel=i margin=1]
+	9 -> 10 [headlabel=i margin=1]
+	10 -> 12 [headlabel=i margin=1]
+	11 -> 12 [headlabel=p margin=1]
+	11 -> 21 [headlabel=i margin=1]
+	12 -> 21 [headlabel=p margin=1]
+	13 -> 14 [headlabel=i margin=1]
+	13 -> 15 [headlabel=i margin=1]
+	6 -> 15 [headlabel=p margin=1]
+	16 -> 17 [headlabel=i margin=1]
+	18 -> 17 [headlabel=p margin=1]
+	15 -> 18 [headlabel=i margin=1]
+	7 -> 18 [headlabel=p margin=1]
+	16 -> 19 [headlabel=i margin=1]
+	18 -> 19 [headlabel=p margin=1]
+	15 -> 20 [headlabel=i margin=1]
+	20 -> 22 [headlabel=i margin=1]
+	21 -> 22 [headlabel=p margin=1]
+	20 -> 23 [headlabel=i margin=1]
+	22 -> 23 [headlabel=p margin=1]
+	22 -> 24 [headlabel=i margin=1]
+	23 -> 24 [headlabel=p margin=1]
+	25 -> 26 [headlabel=i margin=1]
+	17 -> 27 [headlabel=i margin=1]
+	19 -> 27 [headlabel=i margin=1]
+	27 -> 28 [headlabel=i margin=1]
+	24 -> 29 [headlabel=p margin=1]
+	28 -> 33 [headlabel=i margin=1]
+	29 -> 33 [headlabel=p margin=1]
+	35 -> 33 [headlabel=c margin=1]
+	29 -> 35 [headlabel=i margin=1]
+	28 -> 30 [headlabel=i margin=1]
+	26 -> 30 [headlabel=p margin=1]
+	28 -> 31 [headlabel=i margin=1]
+	28 -> 32 [headlabel=i margin=1]
+	33 -> 34 [headlabel=i margin=1]
+}
