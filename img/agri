@@ -1,0 +1,75 @@
+digraph {
+	concentrate=true overlap="faulse " rankdir=LR splines=true
+	subgraph cluster0 {
+		{
+			graph [rank=source]
+			source0 [label="phase0
+source" style=dotted]
+			1 [label="1気候変動
+影響の予測
+評価" color="#808080" fillcolor="#ccddff" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+			2 [label="2地域社会
+経済状況の
+総合評価" color="#808080" fillcolor="#ccddff" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		}
+		3 [label="3営農継続
+の評価" color="#808080" fillcolor="#ff7f50" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		4 [label="4地域協議
+会設立" color="#808080" fillcolor="#ff7f50" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		5 [label="5品目のリ
+ストアップ
+" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		6 [label="6調査評価
+" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		7 [label="7試験栽培
+" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		8 [label="8品目転換
+計画" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		9 [label="9農業経営
+モデル構築
+" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		10 [label="10ノウハ
+ウの習得" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		11 [label="11機械、
+設備費等の
+調整" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		12 [label="12インフ
+ラの整備" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		13 [label="13適応策
+のための施
+策基盤整備
+" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		14 [label="14流通加
+工販売体制
+整備" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
+		{
+			graph [rank=sink]
+			sink0 [label="phase0
+sink" style=dotted]
+			15 [label="15品目転
+換" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		}
+	}
+	source0 -> sink0 [color="#808080" style=dotted weight=1000]
+	1 -> 3 [color="#808080" headlabel=i labeldistance=2.0]
+	2 -> 3 [color="#808080" headlabel=i labeldistance=2.0]
+	3 -> 4 [color="#808080" headlabel=i labeldistance=2.0]
+	4 -> 5 [color="#808080" headlabel=i labeldistance=2.0]
+	1 -> 5 [color="#808080" headlabel=c labeldistance=2.0]
+	5 -> 6 [color="#808080" headlabel=i labeldistance=2.0]
+	6 -> 7 [color="#808080" headlabel=i labeldistance=2.0]
+	7 -> 8 [color="#808080" headlabel=i labeldistance=2.0]
+	3 -> 9 [color="#808080" headlabel=i labeldistance=2.0]
+	4 -> 9 [color="#808080" headlabel=i labeldistance=2.0]
+	7 -> 9 [color="#808080" headlabel=c labeldistance=2.0]
+	9 -> 10 [color="#808080" headlabel=i labeldistance=2.0]
+	10 -> 11 [color="#808080" headlabel=i labeldistance=2.0]
+	4 -> 12 [color="#808080" headlabel=i labeldistance=2.0]
+	2 -> 12 [color="#808080" headlabel=c labeldistance=2.0]
+	12 -> 13 [color="#808080" headlabel=c labeldistance=2.0]
+	8 -> 15 [color="#808080" headlabel=c labeldistance=2.0]
+	11 -> 15 [color="#808080" headlabel=i labeldistance=2.0]
+	12 -> 15 [color="#808080" headlabel=p labeldistance=2.0]
+	13 -> 15 [color="#808080" headlabel=p labeldistance=2.0]
+	14 -> 15 [color="#808080" headlabel=p labeldistance=2.0]
+}
