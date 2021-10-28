@@ -56,7 +56,7 @@ def tree2graph(tree, dg, cl):
         l2=re.sub("(.{5})",'\\1\n', n+l)  
         fs=label_font(l)     
         dg.node(n, l2, height='0.5', width='1', fontsize=str(fs), shape="box", style="rounded,filled", color='#808080', fillcolor=color, fontname = "MS Gothic")
-        #dg.node(n, l2, height='0.8', width='1', fontsize=str(fs), shape="hexagon", style="filled", color='#808080', fillcolor=color, fontname = "MS Gothic", fixedsize='true') 
+        #dg.node(n, l2, shape='svg', shapefile='./img/test2.svg', fontsize=str(fs), style="filled", color='#808080', fillcolor=color, fontname = "MS Gothic", fixedsize='true') 
 
 args=sys.argv
 #print(args[1])
@@ -73,9 +73,9 @@ tree = ElementTree.parse(XMLFILE)  # ファイルから読み込み
 root = tree.getroot()
 
 dg = Digraph(format='png', engine='dot')
-dg.attr(rankdir='LR', concentrate='true', overlap='faulse ', splines='true')
+dg.attr(rankdir='LR', concentrate='true', overlap='faulse ', splines='true', nodesep='0.5')
 
 tree2graph(root, dg, 0)
 
 name, ext = os.path.splitext( os.path.basename(XMLFILE) )
-dg.render('./img/'+name) 
+dg.render('./output/'+name) 

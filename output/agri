@@ -1,5 +1,5 @@
 digraph {
-	concentrate=true overlap="faulse " rankdir=LR splines=true
+	concentrate=true nodesep=0.5 overlap="faulse " rankdir=LR splines=true
 	subgraph cluster0 {
 		{
 			graph [rank=source]
@@ -52,7 +52,7 @@ sink" style=dotted]
 	}
 	source0 -> sink0 [color="#808080" style=dotted weight=1000]
 	1 -> 3 [color="#808080" headlabel=i labeldistance=2.0]
-	2 -> 3 [color="#808080" headlabel=i labeldistance=2.0]
+	2 -> 3 [color="#808080" headlabel=r labeldistance=2.0]
 	3 -> 4 [color="#808080" headlabel=i labeldistance=2.0]
 	4 -> 5 [color="#808080" headlabel=i labeldistance=2.0]
 	1 -> 5 [color="#808080" headlabel=c labeldistance=2.0]

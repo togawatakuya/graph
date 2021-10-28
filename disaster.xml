@@ -67,6 +67,7 @@
             <id>11</id>
             <label>避難所設置と運営</label>
             <color>#f0e68c</color>
+            <i>3</i>
         </function>
         <function>
             <id>12</id>
@@ -103,7 +104,6 @@
             <label>河川水位警戒LV4発令</label>
             <color>#ff7f50</color>
             <i>13</i>
-            <p>5</p>
         </function>
         <function>
             <id>16</id>
@@ -126,6 +126,7 @@
             <i>15</i>
             <p>7</p>
             <c>14</c>>
+            <c>23</c>
         </function>
         <function>
             <id>19</id>
@@ -171,29 +172,29 @@
         </rank>
     </cluster>
     <cluster>
-        <function>
-            <id>25</id>
-            <label>気象・水位観測</label>
-        </function> 
+        <rank>source
+            <function>
+                <id>25</id>
+                <label>気象・水位観測</label>
+            </function>
+            <function>
+                    <id>28</id>
+                    <label>被害状況調査</label>
+                    <color>#f0e68c</color>
+                    <i>27</i>
+            </function>
+            <function>
+                <id>29</id>
+                <label>避難所運営</label>
+                <color>#f0e68c</color>
+                <p>24</p>
+            </function>
+        </rank>
         <function>
             <id>26</id>
             <label>安全性確認</label>
             <color>#f0e68c</color>
             <i>25</i>
-        </function>
-        <rank>source
-            <function>
-                <id>28</id>
-                <label>被害状況調査</label>
-                <color>#f0e68c</color>
-                <i>27</i>
-            </function>
-        </rank>
-        <function>
-            <id>29</id>
-            <label>避難所運営</label>
-            <color>#f0e68c</color>
-            <p>24</p>
         </function>
         <function>
             <id>33</id>

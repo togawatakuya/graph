@@ -1,5 +1,5 @@
 digraph {
-	concentrate=true overlap="faulse " rankdir=LR splines=true
+	concentrate=true nodesep=0.5 overlap="faulse " rankdir=LR splines=true
 	subgraph cluster0 {
 		{
 			graph [rank=source]
@@ -87,19 +87,19 @@ sink" style=dotted]
 		}
 	}
 	subgraph cluster2 {
-		25 [label="25気象・
-水位観測" color="#808080" fillcolor="#ccddff" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
-		26 [label="26安全性
-確認" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
 		{
 			graph [rank=source]
 			source2 [label="phase2
 source" style=dotted]
+			25 [label="25気象・
+水位観測" color="#808080" fillcolor="#ccddff" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
 			28 [label="28被害状
 況調査" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
-		}
-		29 [label="29避難所
+			29 [label="29避難所
 運営" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
+		}
+		26 [label="26安全性
+確認" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=13 height=0.5 shape=box style="rounded,filled" width=1]
 		33 [label="33避難所
 の統廃合" color="#808080" fillcolor="#f0e68c" fontname="MS Gothic" fontsize=10 height=0.5 shape=box style="rounded,filled" width=1]
 		35 [label="35避難所
@@ -137,13 +137,13 @@ sink" style=dotted]
 	4 -> 10 [color="#808080" headlabel=i labeldistance=2.0]
 	8 -> 10 [color="#808080" headlabel=i labeldistance=2.0]
 	9 -> 10 [color="#808080" headlabel=i labeldistance=2.0]
+	3 -> 11 [color="#808080" headlabel=i labeldistance=2.0]
 	10 -> 12 [color="#808080" headlabel=i labeldistance=2.0]
 	11 -> 12 [color="#808080" headlabel=p labeldistance=2.0]
 	11 -> 21 [color="#808080" headlabel=i labeldistance=2.0]
 	12 -> 21 [color="#808080" headlabel=p labeldistance=2.0]
 	13 -> 14 [color="#808080" headlabel=i labeldistance=2.0]
 	13 -> 15 [color="#808080" headlabel=i labeldistance=2.0]
-	5 -> 15 [color="#808080" headlabel=p labeldistance=2.0]
 	6 -> 16 [color="#808080" headlabel=p labeldistance=2.0]
 	7 -> 16 [color="#808080" headlabel=r labeldistance=2.0]
 	16 -> 17 [color="#808080" headlabel=i labeldistance=2.0]
@@ -151,6 +151,7 @@ sink" style=dotted]
 	15 -> 18 [color="#808080" headlabel=i labeldistance=2.0]
 	7 -> 18 [color="#808080" headlabel=p labeldistance=2.0]
 	14 -> 18 [color="#808080" headlabel=c labeldistance=2.0]
+	23 -> 18 [color="#808080" headlabel=c labeldistance=2.0]
 	16 -> 19 [color="#808080" headlabel=i labeldistance=2.0]
 	18 -> 19 [color="#808080" headlabel=p labeldistance=2.0]
 	13 -> 20 [color="#808080" headlabel=i labeldistance=2.0]
@@ -161,9 +162,9 @@ sink" style=dotted]
 	23 -> 24 [color="#808080" headlabel=p labeldistance=2.0]
 	17 -> 27 [color="#808080" headlabel=i labeldistance=2.0]
 	19 -> 27 [color="#808080" headlabel=i labeldistance=2.0]
-	25 -> 26 [color="#808080" headlabel=i labeldistance=2.0]
 	27 -> 28 [color="#808080" headlabel=i labeldistance=2.0]
 	24 -> 29 [color="#808080" headlabel=p labeldistance=2.0]
+	25 -> 26 [color="#808080" headlabel=i labeldistance=2.0]
 	28 -> 33 [color="#808080" headlabel=i labeldistance=2.0]
 	29 -> 33 [color="#808080" headlabel=p labeldistance=2.0]
 	35 -> 33 [color="#808080" headlabel=c labeldistance=2.0]
