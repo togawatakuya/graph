@@ -27,7 +27,7 @@
          </function>
         <function>
             <id>5</id>
-            <label>河川水位情報LV3発令</label>
+            <label>河川水位情報LV3の発令</label>
             <color>#ff7f50</color>
             <i>1</i>
         </function>
@@ -45,7 +45,7 @@
         </function>
         <function>
             <id>8</id>
-            <label>公共交通機関等運休</label>
+            <label>公共交通機関等の運休</label>
             <color>#f0e68c</color>  
             <i>3</i>
         </function>
